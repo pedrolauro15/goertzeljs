@@ -114,7 +114,7 @@ export default class DTMF {
     return result;
   }
 
-  on(eventName: "decode", handler: () => any) {
+  on(eventName: "decode", handler: (value: string) => void) {
     switch (eventName) {
       case "decode":
         return this.decodeHandlers.push(handler);

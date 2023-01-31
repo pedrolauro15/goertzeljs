@@ -14,7 +14,7 @@ export default class DTMF {
     private frequencyTable;
     constructor(options: undefined | DTMFOptions);
     processBuffer(buffer: Buffer): string[];
-    on(eventName: "decode", handler: () => any): number;
+    on(eventName: "decode", handler: (value: string) => void): number;
     calibrate(multiplier: number): number;
     _energyProfileToCharacter(register: any): string | null;
     _runJobs(jobName: string, buffer: Buffer): number[] | undefined;
