@@ -1,4 +1,4 @@
-import Goertzel from "../index";
+import Goertzel from "../goertzel";
 
 export type DTMFOptions = {
   downsampleRate?: number;

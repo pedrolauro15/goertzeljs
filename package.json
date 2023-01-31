@@ -1,7 +1,7 @@
 {
-  "name": "goertzeljs",
-  "version": "4.2.3",
-  "description": "A pure JavaScript implementation of the Goertzel algorithm.",
+  "name": "s4sgoertzel",
+  "version": "0.0.1",
+  "description": "A pure JavaScript implementation of the Goertzel algorithm and DTMF.",
   "main": "lib/index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/Ravenstine/goertzeljs.git"
+    "url": "https://github.com/pedrolauro15/goertzeljs"
   },
   "keywords": [
     "goertzel",
@@ -20,10 +20,10 @@
     "dft",
     "telephony"
   ],
-  "author": "Ben Titcomb (@Ravenstine)",
+  "author": "S4s Forked by => Ben Titcomb (@Ravenstine)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Ravenstine/goertzeljs/issues"
+    "url": "https://github.com/pedrolauro15/goertzeljs"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.18.0",

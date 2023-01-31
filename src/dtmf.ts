@@ -1,6 +1,6 @@
 import { DTMF_INITIAL_OPTIONS } from "./constants/DTMF_INITIAL_OPTIONS";
 import { INITIAL_FREQUENCY_TABLE } from "./constants/INITIAL_FREQUENCY_TABLE";
-import Goertzel from "./index";
+import Goertzel from "./goertzel";
 import { DTMFOptions } from "./types/dtmfOptions";
 
 export default class DTMF {
