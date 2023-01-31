@@ -3,3 +3,5 @@
 .DS_Store
 *.log
 /demo/bundle.js
+
+package-lock.json
