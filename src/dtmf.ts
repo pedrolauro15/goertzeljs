@@ -49,6 +49,17 @@ export default class DTMF {
     this.jobs = { beforeProcess: [] };
   }
 
+  /**
+   * S4s Implementation for naturally updates frequencyDTMF Table
+   */
+  getFrequencyTable() {
+    return this.frequencyTable;
+  }
+
+  updateFrequencyTable(table: { [key: number]: { [key: number]: string } }) {
+    this.frequencyTable = table;
+  }
+
   processBuffer(buffer: Buffer) {
     let value = "";
     let result: string[] = [];

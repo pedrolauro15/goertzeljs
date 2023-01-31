@@ -13,6 +13,19 @@ export default class DTMF {
     private decodeHandlers;
     private frequencyTable;
     constructor(options: undefined | DTMFOptions);
+    /**
+     * S4s Implementation for naturally updates frequencyDTMF Table
+     */
+    getFrequencyTable(): {
+        [key: number]: {
+            [key: number]: string;
+        };
+    };
+    updateFrequencyTable(table: {
+        [key: number]: {
+            [key: number]: string;
+        };
+    }): void;
     processBuffer(buffer: Buffer): string[];
     on(eventName: "decode", handler: (value: string) => void): number;
     calibrate(multiplier: number): number;
