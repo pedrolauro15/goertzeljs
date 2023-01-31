@@ -2,11 +2,11 @@
   "name": "goertzeljs",
   "version": "4.2.3",
   "description": "A pure JavaScript implementation of the Goertzel algorithm.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha",
     "demo": "./node_modules/gulp/bin/gulp.js",
-    "build": "tsc"
+    "build": "rm -rf lib && tsc"
   },
   "repository": {
     "type": "git",
