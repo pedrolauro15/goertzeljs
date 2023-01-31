@@ -17,12 +17,12 @@ class Goertzel {
   private secondPrevious: { [key: string]: string | number | boolean };
   private totalPower: { [key: string]: string | number | boolean };
   private filterLength: { [key: string]: string | number | boolean };
-  private energies: { [key: string]: string | number | boolean };
   private phases: { [key: string]: string | number | boolean };
   private coefficient: { [key: string | number]: number };
   private cosine: { [key: number]: number };
   private sine: { [key: number]: number };
-  public static utilities = Utilities;
+  public energies: { [key: string]: string | number | boolean };
+  public static Utilities = Utilities;
 
   constructor(options: GoertzelOptions = INITIAL_OPTIONS) {
     this.options = options;
