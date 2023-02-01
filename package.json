@@ -8,6 +8,7 @@
     "demo": "./node_modules/gulp/bin/gulp.js",
     "build": "rm -rf lib && tsc"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/pedrolauro15/goertzeljs"
